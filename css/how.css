@@ -1,0 +1,173 @@
+body{
+	text-align:center;
+	background-color:white;
+}
+#heading{
+	  font-family: 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif;
+	  position:relative;left:-390px;color:white;font-size:29px;margin-left:20px;margin-right:auto;
+	  color:white;
+}
+#logout{
+	position:relative;
+	left:450px;margin-left:auto;
+	background-color:orange;padding:7px;top:-17px;padding-left:36px;padding-right:36px;
+}
+#log>a{
+	text-decoration:none;  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color:white;background-color:black;
+	 box-shadow: 4px -2px 5px #888888;
+}
+#log a:hover{
+	color:green;
+	 box-shadow: 0px 0px 5px #888888;
+}
+#back{
+	position:relative;box-shadow: 4px -2px 5px #888888;
+	left:-5px;margin-left:auto;width:60px;color:white;
+	background-color:black;padding:7px;top:-43px;padding-left:36px;padding-right:36px;
+}
+#back>a{
+	text-decoration:none;  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color:white;background-color:black;
+	 
+}
+ul{
+	list-style-type:none;
+}
+#upper_footer{
+	border:1px solid #D4D4D4;/*#FAF0E6*/
+	width:1300px;position:relative;left:0px;
+	margin-left:auto;margin-right:auto;
+	position:relative;background-color:#E8E8E8;
+	top:238px;height:230px;margin-bottom:0px;
+}
+@-webkit-keyframes myfirst {
+      0%   {background: red; left: -150px; top: 150px;}
+    16%   {left: -180px; top: 57px;}
+	32%{left:-120px;top:12px;}
+	48%  {background: yellow; left: -13px; top: 24px;}
+    64%  {background: blue; left: -0px; top: 140px;}
+    80%  {background: green; left: -110px; top: 150px;}
+    100% {background: red; left: -150px; top: 150px;}
+}
+@-webkit-keyframes mysecond {
+    0%   {background: red; left: -212px; top: 42px;}
+    16%   {left: -125px; top: 10px;}
+	32%{left:-50px;top:34px;}
+	48%  {background: yellow; left: -60px; top: 150px;}
+    64%  {background: blue; left: -177px; top: 150px;}
+    80%  {background: green; left: -230px; top: 70px;}
+    100% {background: red; left: -212px; top: 42px;}
+}
+@-webkit-keyframes mythird {
+      0%   {background: red; left: -100px; top: 48px;}
+    16%   {left: -100px; top: 150px;}
+	32%{left:-236px;top:150px;}
+	48%  {background: yellow; left: -266px; top: 79px;}
+    64%  {background: blue; left: -215px; top: 10px;}
+    80%  {background: green; left: -100px; top: 10px;}
+    100% {background: red; left: -100px; top: 48px;}
+}
+@-webkit-keyframes myfourth {
+      0%   {background: red; left: -160px; top: 150px;}
+    16%   {left: -300px; top: 150px;}
+	32%{left:-315px;top:68px;}
+	48%  {background: yellow; left: -253px; top: 13px;}
+    64%  {background: blue; left: -157px; top: 22px;}
+    80%  {background: green; left: -130px; top: 100px;}
+    100% {background: red; left: -160px; top: 150px;}
+}
+@-webkit-keyframes myfive {
+      0%   {background: red; left: -250px; top: 10px;}
+    16%   {left: -180px; top: 40px;}
+	32%{left:-190px;top:145px;}
+	48%  {background: yellow; left: -306px; top: 152px;}
+    64%  {background: blue; left: -346px; top: 79px;}
+    80%  {background: green; left: -260px; top: 5px;}
+    100% {background: red; left: -250px; top: 10px;}
+}
+#facebook
+{	width: 40px;
+    height: 40px;
+	position:relative;
+	left:-320px;
+    -webkit-animation: myfirst 15s infinite; /* Chrome, Safari, Opera */
+    -webkit-animation-direction: inherit; /* Chrome, Safari, Opera */
+    animation: myfirst 1s infinite;
+    animation-direction: alternate;
+    }
+#linkedin{
+	width: 40px;
+    height: 40px;
+	
+    background: red;
+    position: relative;
+	left:-320px;
+    -webkit-animation: mysecond 15s infinite; /* Chrome, Safari, Opera */
+    -webkit-animation-direction: inherit; /* Chrome, Safari, Opera */
+    animation: myfirst 5s infinite;
+    animation-direction: alternate;
+}
+#twitter{
+	width: 40px;
+    height: 40px;
+	
+    background: red;
+    position: relative;
+	left:-250px;
+    -webkit-animation: mythird 15s infinite; /* Chrome, Safari, Opera */
+    -webkit-animation-direction: inherit; /* Chrome, Safari, Opera */
+    animation: myfirst 5s infinite;
+    animation-direction: alternate;
+}
+#instagram{
+	width: 40px;
+    height: 40px;
+	
+    background: red;
+    position: relative;
+	left:-250px;
+    -webkit-animation: myfourth 15s infinite; /* Chrome, Safari, Opera */
+    -webkit-animation-direction: inherit; /* Chrome, Safari, Opera */
+    animation: myfirst 5s infinite;
+    animation-direction: alternate;
+}
+#kat{
+	width: 40px;
+    height: 40px;
+	
+    background: red;
+    position: relative;
+	left:-250px;
+    -webkit-animation: myfive 15s infinite; /* Chrome, Safari, Opera */
+    -webkit-animation-direction: inherit; /* Chrome, Safari, Opera */
+    animation: myfirst 5s infinite;
+    animation-direction: alternate;
+}
+#sun{
+	border-radius:50px;position:relative;left:-10px;top:104px;
+}
+#about{
+	position:relative;left:340px;
+}
+#faq{
+	position:relative;left:380px;
+}
+#how{
+	position:absolute;left:1040px;top:26px;
+}
+footer{
+	margin-top:-10px;margin-left:auto;margin-right:auto;
+	border:1px solid black;
+	position:relative;left:0px;top:249px;
+	background-color:black;color:white;
+	padding:20px;
+	width:1260px;border-radius:5px;opacity:0.9;
+}
+#security{
+	position:relative;left:420px;
+}
+#others{
+		position:relative;left:460px;
+		
+}

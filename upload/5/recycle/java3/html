@@ -1,0 +1,15 @@
+&lt;!docktype html&gt;
+
+&lt;html&gt;
+&lt;head&gt;	
+	&lt;link  rel=&quot;stylesheet&quot; href=&quot;css/how.css&quot;/&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+		&lt;header style=&quot;background-image: url(css/lolo.jpg); height: 100px;margin-left:auto;margin-right:auto; border: 1px solid black; padding-right:auto;&quot;&gt;
+ &lt;h2 id=&quot;heading&quot;&gt; CodeBox&lt;/h2&gt;
+ &lt;div id=&quot;log&quot;&gt;&lt;a href=&quot;logout.php&quot; id=&quot;logout&quot;&gt;Logout&lt;/a&gt;&lt;/div&gt;
+ &lt;div id=&quot;back&quot;&gt;&lt;a href=&quot;main.php&quot;&gt;Back&lt;/a&gt;&lt;/div&gt;
+ &lt;/header&gt;
+&lt;/body&gt;
+&lt;/html&gt;

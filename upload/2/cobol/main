@@ -1,0 +1,178 @@
+&lt;?php
+$list='&quot;list.php&quot;';
+$real='&quot;$name&quot;';
+$real1='$name';
+$assign='$filen=';
+$text2='$files1 as $p';
+$p='$p';
+$link= &quot;'&lt;a href=\&quot;#\&quot;&gt;&lt;li&gt;'.$p.'&lt;/li&gt;&lt;/a&gt;'&quot;;
+$path='$path';
+$filenamek='$filename';
+$name='$name';
+$myfile='$myfile';
+$code='$code';
+$first='$_POST[\'name\']';
+$second='$_POST[\'code\']';
+$third='$_POST[\'filename\']';
+$fourth='$_POST[\'deletename\']';
+include 'core/init.php';
+	
+?&gt;
+&lt;!docktype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;/head&gt;
+&lt;body&gt;
+ &lt;h2&gt;File-Sharing Site&lt;/h2&gt;
+&lt;h3&gt;Upload file&lt;/h3&gt;
+&lt;?php
+$filename=&quot;upload/$session_user_id&quot;;
+if (file_exists($filename)===false) {
+$dirPath = &quot;upload/$session_user_id&quot;;
+$result = mkdir($dirPath, 0755);
+}
+	?&gt;
+	&lt;h3&gt;Create a Folder:&lt;/h3&gt;
+	&lt;?php
+?&gt;
+	&lt;form action=&quot;&quot; method=&quot;post&quot;&gt;
+		&lt;?php
+		if(empty($_POST['foldername'])===false){	
+				$name=$_POST['foldername'];
+				$filename=&quot;upload/$session_user_id/$name&quot;;
+				$k=mkdir($filename);
+			$filenaam=fopen(&quot;upload/$session_user_id/$name/list.php&quot;,&quot;w&quot;);
+			$text='$files1 = scandir(&quot;../../../upload/$session_user_id/';
+			$txt = &quot;&lt;?php include '../../../core/init.php';
+
+	
+?&gt;
+&lt;?php
+	if(empty($first)===false){
+		$real1=$first;
+		$code=htmlentities($second);
+		if(file_exists($real)===FALSE){
+		$myfile=fopen($real,'w');
+		fwrite($myfile,$code);
+		fclose($myfile);
+		}else{
+			echo 'The File already exists.To overwrite it &lt;a href=$list&gt;Delete&lt;/a&gt; the file first.';
+		}
+	}
+	
+?&gt;
+&lt;?php
+
+	if(empty($third)===false){
+		$real1=$third;
+		$myfile = fopen($real, 'r') or die('Unable to open file!');
+		?&gt;&lt;div id='code'&gt;&lt;?php
+		while(!feof($myfile)) {
+			echo fgets($myfile) . '&lt;br&gt;';
+		}
+		?&gt;&lt;/div&gt;&lt;?php
+		fclose($myfile);
+	}
+?&gt;
+&lt;!docktype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+	&lt;h2&gt;$name/&lt;/h2&gt;&lt;br /&gt;&lt;br /&gt;
+	&lt;form action='' method='post'&gt;
+		Name of the File Opened:
+		&lt;input type='text' name='filename'/&gt;
+		&lt;input type='submit' value='Submit' /&gt;
+	&lt;/form&gt;
+	
+	&lt;?php
+		if(empty($fourth)===false){
+			$filenamek=$fourth;
+			$path='$filenamek';
+			if (file_exists($path)===true) {
+					$p=unlink($path);
+					if($p==1){
+						echo 'File successfully deleted.&lt;br /&gt;';
+					}else{
+						echo 'File not successfully deleted &lt;br /&gt;';
+					}
+			}else{
+				echo 'not exists';
+			}
+				
+			
+		}
+	?&gt;
+	&lt;form action='' method='post'&gt;
+	Name of the File to be deleted:
+		&lt;input type='text' name='deletename'/&gt;
+		&lt;input type='submit' value='Submit' /&gt;
+	&lt;/form&gt;
+	&lt;?php
+		$text$name\&quot;);
+				echo '&lt;ul&gt;';
+					foreach($text2){
+						if($p!='list.php'){
+					echo $link;
+					}
+					}
+					echo '&lt;/ul&gt;';
+				$assign\&quot;$name\&quot;;
+	?&gt;
+	
+	
+	&lt;a href='../../../main.php'&gt;Back&lt;/a&gt;
+	
+	&lt;form action='' method='post'&gt;
+	Name:&lt;input type='text' name='name' /&gt;&lt;br /&gt;&lt;br /&gt;
+	Code:&lt;br /&gt;&lt;textarea name='code' rows='10' cols='20'&gt;&lt;/textarea&gt;&lt;br /&gt;
+	&lt;input type='submit' value='Submit' /&gt;
+&lt;/form&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;&quot;;
+			fwrite($filenaam, $txt);
+			
+		}
+		$files=scandir(&quot;upload/$session_user_id/&quot;);
+		echo '&lt;ul&gt;';
+		foreach($files as $p){
+	
+			echo &quot;&lt;a href='upload/$session_user_id/$p/list.php'&gt;&lt;li&gt;&quot;.$p.&quot;&lt;/li&gt;&lt;/a&gt;&quot;;
+		
+	}
+		echo '&lt;/ul&gt;';
+		?&gt;
+		Folder Name:&lt;br /&gt;
+		&lt;input type=&quot;text&quot; name=&quot;foldername&quot;/&gt;
+		&lt;input type=&quot;submit&quot; value=&quot;submit&quot;/&gt;
+	&lt;/form&gt;
+	&lt;form action=&quot;&quot; method=&quot;post&quot;&gt;
+		&lt;?php
+			if(empty($_POST['deletefold'])===false){
+				$filename=$_POST['deletefold'];
+			$path=&quot;upload/$session_user_id/$filename/&quot;;
+			if(file_exists($path)===true){
+				$p=unlink($path);
+				
+				if($p==1){
+					echo &quot;File $path successfully deleted&quot;;
+				}else{
+					echo &quot;Not able to delete the file $path&quot;;
+				}
+			}
+			
+	
+			
+}
+		?&gt;
+		Delete a Folder:
+		&lt;input type=&quot;text&quot; name=&quot;deletefold&quot; /&gt;
+		&lt;input type=&quot;submit&quot; value=&quot;Delete&quot;/&gt;
+	&lt;/form&gt;
+&lt;a href=&quot;logout.php&quot;&gt;Logout&lt;/a&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;

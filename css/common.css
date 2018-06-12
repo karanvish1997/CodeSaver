@@ -1,0 +1,83 @@
+body{
+	text-align:center;
+}
+#surround{
+  width:1345px;
+  margin:0 auto;
+  /*more CSS*/
+}
+
+#list_of_files{
+	border:2px solid #D6D6D6;width:300px;padding-left:-15px;
+	position:relative;left:1010px;background-color:#00BFFF;top:60px;
+}
+#list_of_files_inside{
+	margin:10px;text-align:left;
+	border:1px solid black;padding-left:-20px;
+			font-family: Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, 'Segoe UI Emoji', 'Segoe UI Symbol';
+		font-size:17px; background: linear-gradient(#BF3EFF, blue); 
+		border-radius:5px;
+}
+#list_of_files_inside ul{
+	position:relative;left:-20px;
+}
+#list_of_files_inside li{
+	border-bottom:1px solid black;padding:5px;color:white;
+}
+#list_of_files_inside li:hover{
+	border-bottom:1px solid black;padding:5px;
+	background-color:#BF3EFF;color:white;
+}
+#repositories{
+	text-align:left;position:relative;left:20px;
+	font-family: Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, 'Segoe UI Emoji', 'Segoe UI Symbol';
+
+}
+
+#aside{
+	margin:20px;
+	position:relative;width:320px;
+	left:980px;top:40px;background-color:#912CEE;
+}
+h4{
+		font-family: Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, 'Segoe UI Emoji', 'Segoe UI Symbol';
+		text-align:left;padding:10px;color:white;
+}
+#input_file{
+	padding:5px;border-radius:6px;width:190px;position:relative;left:-32px;top:-9px;
+			font-family: Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+#button{
+	padding:7px;position:relative;left:109px;top:-40px;
+}
+#main_code{
+	border:2px solid grey;width:900px;position:relative;left:20px;top:-490px;padding:20px;
+}
+#repo_name{
+	border:1px solid blue;text-align:left;padding:17px;position:relative;padding-left:50px;
+				font-family: Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, 'Segoe UI Emoji', 'Segoe UI Symbol';
+	font-size:19px;background-color:#E6E6FA;border-radius:4px;opacity:0.9;
+	-webkit-box-shadow: 0px 13px 7px 0px rgba(230,230,250,1);
+-moz-box-shadow: 0px 13px 7px 0px rgba(230,230,250,1);
+box-shadow: 0px 13px 7px 0px rgba(230,230,250,1);
+}
+#code_block{
+		border:1px solid blue;text-align:left;padding-left:50px;padding:20px;
+		font-family: Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, 'Segoe UI Emoji', 'Segoe UI Symbol';
+		font-size:19px;padding-left:50px;padding-top:20px;border-radius:5px;background-color:#E6E6FA;
+}
+#textarea{
+	font-family:Media Gothic;font-size:16px;
+}
+#repo_file_name{
+	padding:5px;
+}
+#repo_submit{
+	padding:5px;width:150px;
+	-webkit-box-shadow: 5px 5px 7px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 5px 5px 7px 0px rgba(0,0,0,0.75);
+box-shadow: 5px 5px 7px 0px rgba(0,0,0,0.75);
+}
+#delete_file{
+	margin-top:-45px;
+}

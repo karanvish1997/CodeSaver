@@ -1,0 +1,38 @@
+body{
+	text-align:center;
+}
+#surround{
+  width:1345px;
+  margin:0 auto;
+  /*more CSS*/
+}
+#hello{
+		font-family: Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, 'Segoe UI Emoji', 'Segoe UI Symbol';
+	position:absolute;left:90px;top:18px;
+}
+#nav{
+	
+	width:250px;height:120px;position:relative;top:50px;right:-1000px;
+	padding-right:35px;background-color:#8B008B;color:white;padding-top:50px;
+	}
+#nav a{
+	text-decoration:none;
+}
+#nav li{
+	border:1px solid black;padding:10px;color:white;background-color:black;width:190px;
+	border-bottom:1px solid grey;font-size:17px;
+		font-family: Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, 'Segoe UI Emoji', 'Segoe UI Symbol';
+
+}
+#nav li:hover{
+	background-color:orange;
+}
+#changeit{
+	position:relative;top:-120px;left:408px;color:white;
+	background-color:#1E90FF;width:500px;padding:20px;border-radius:6px;padding-left:14px;
+	font-family: Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+#last{
+	border:2px solid #1E90FF;font-family: Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, 'Segoe UI Emoji', 'Segoe UI Symbol';
+	width:800px;border-radius:6px;position:relative;left:300px;
+}

@@ -1,0 +1,21 @@
+
+&lt;/head&gt;
+
+&lt;body&gt;
+	&lt;h2&gt;Files of cobol&lt;/h2&gt;&lt;br /&gt;&lt;br /&gt;
+	&lt;?php
+		$files1 = scandir(&quot;../../../upload/$session_user_id/cobol/&quot;);
+				echo '&lt;ul&gt;';
+					foreach($files1 as $p){
+						if($p!='list.php'){
+					echo &quot;&lt;a href='#'&gt;&lt;li&gt;&quot;.$p.&quot;&lt;/li&gt;&lt;/a&gt;&quot;;
+					}
+					}
+					echo '&lt;/ul&gt;';
+	?&gt;
+	
+	
+	&lt;a href=&quot;../../../main.php&quot;&gt;Back&lt;/a&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;

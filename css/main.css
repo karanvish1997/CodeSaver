@@ -1,0 +1,277 @@
+body{
+	text-align:center;
+	background-color:white;
+}
+#surround{
+	margin-left:auto;margin-right:auto;
+}
+
+#heading{
+	  font-family: 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif;
+	  position:relative;left:-490px;color:white;font-size:29px;margin-left:20px;margin-right:auto;
+}
+#logout{
+	position:relative;
+	left:450px;margin-left:auto;
+	background-color:orange;padding:7px;top:-17px;padding-left:36px;padding-right:36px;
+}
+ul{
+	list-style-type:none;
+}
+#log>a{
+	text-decoration:none;  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color:white;background-color:black;
+	 box-shadow: 4px -2px 5px #888888;
+}
+#log a:hover{
+	color:green;
+	 box-shadow: 0px 0px 5px #888888;
+}
+#create_folder{
+	font-family: 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif;
+	font-size:23px;position:absolute;left:25px;
+}
+#list_of_files{
+	border:2px solid #E3E3E3;position:relative;top:70px;
+	width:900px;margin-left:20px;    opacity: 0.9;
+	background-color:#FFF68F;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size:20px;text-align:left;
+	border-radius:6px;padding:13px;height:
+}
+hr{
+	border: none;
+    height: 1px;
+	
+    /* Set the hr color */
+    color: #E8E8E8; /* old IE */
+    background-color: #E8E8E8; /* Modern Browsers */
+}
+#list{
+	border:1px solid #FFFAFA;
+	background-color:white;margin-top:40px;
+}
+#side{
+	position:relative;
+	left:400px;margin-left:auto;margin-right:auto;
+}
+#folder_in{
+	position:relative;
+	left:397px;top:13px;width:200px;
+}
+#aside_pb{
+	float:right;
+	position:relative;  
+	background: linear-gradient(180deg, white, #FF8C00);
+	left:-27px;border:2px solid #FF8C00;top:28px;
+	width:300px;margin-left:10px;
+	border-radius:7px;
+}
+#public_heading{
+	font-family: Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, 'Segoe UI Emoji', 'Segoe UI Symbol';
+	margin-top:20px;
+}
+#second_pb{
+	margin:15px;
+}
+#wrap{
+	border:2px solid white;margin-left:30px;margin-right:30px;margin-bottom:24px;background-color:white;
+	margin-top:-40px;padding-top:30px;
+}
+#subscribe{
+	float:right;
+	position:relative;left:274px;width:20%;color:#4183c4;
+	top:287px;padding:3px;  border: solid 1px #4183c4;
+	border-radius: 3px;margin-bottom:20px;
+	}
+#section{
+	width:1300px;margin-left:auto;margin-right:auto;
+}
+#subscribe_button{
+	padding:6px;width:120px;
+	font-family: Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, 'Segoe UI Emoji', 'Segoe UI Symbol';
+	font-size:15px;border-radius:6px;color: #fff;border:2px solid #60b044;
+	 background: linear-gradient(#8add6d, #60b044);text-shadow: 0 -1px 0 rgba(0,0,0,0.15);
+}
+/*
+	
+*/
+#line{
+	width:320px;position:relative;left:447px;top:-475px;
+}
+
+
+/**/
+footer{
+	margin-top:-10px;margin-left:auto;margin-right:auto;
+	border:1px solid black;
+	position:relative;left:0px;top:249px;
+	background-color:black;color:white;
+	padding:20px;
+	width:1260px;border-radius:5px;opacity:0.9;
+}
+#hello{
+		font-family: Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, 'Segoe UI Emoji', 'Segoe UI Symbol';
+	position:absolute;left:90px;top:18px;
+}
+#nav{
+	width:250px;height:120px;position:relative;left:1000px;top:-250px;margin-top:-20px;
+	padding-right:35px;background-color:#8B008B;color:white;padding-top:50px;
+	}
+#nav a{
+	text-decoration:none;
+}
+#nav li{
+	border:1px solid black;padding:10px;color:white;background-color:black;width:190px;
+	border-bottom:1px solid grey;font-size:17px;
+		font-family: Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, 'Segoe UI Emoji', 'Segoe UI Symbol';
+
+}
+#nav li:hover{
+	background-color:orange;
+}
+
+#upper_footer{
+	border:1px solid #D4D4D4;/*#FAF0E6*/
+	width:1300px;position:relative;left:0px;
+	margin-left:auto;margin-right:auto;
+	position:relative;background-color:#E8E8E8;
+	top:238px;height:230px;margin-bottom:0px;
+}
+@-webkit-keyframes myfirst {
+      0%   {background: red; left: -150px; top: 150px;}
+    16%   {left: -180px; top: 57px;}
+	32%{left:-120px;top:12px;}
+	48%  {background: yellow; left: -13px; top: 24px;}
+    64%  {background: blue; left: -0px; top: 140px;}
+    80%  {background: green; left: -110px; top: 150px;}
+    100% {background: red; left: -150px; top: 150px;}
+}
+@-webkit-keyframes mysecond {
+    0%   {background: red; left: -212px; top: 42px;}
+    16%   {left: -125px; top: 10px;}
+	32%{left:-50px;top:34px;}
+	48%  {background: yellow; left: -60px; top: 150px;}
+    64%  {background: blue; left: -177px; top: 150px;}
+    80%  {background: green; left: -230px; top: 70px;}
+    100% {background: red; left: -212px; top: 42px;}
+}
+@-webkit-keyframes mythird {
+      0%   {background: red; left: -100px; top: 48px;}
+    16%   {left: -100px; top: 150px;}
+	32%{left:-236px;top:150px;}
+	48%  {background: yellow; left: -266px; top: 79px;}
+    64%  {background: blue; left: -215px; top: 10px;}
+    80%  {background: green; left: -100px; top: 10px;}
+    100% {background: red; left: -100px; top: 48px;}
+}
+@-webkit-keyframes myfourth {
+      0%   {background: red; left: -160px; top: 150px;}
+    16%   {left: -300px; top: 150px;}
+	32%{left:-315px;top:68px;}
+	48%  {background: yellow; left: -253px; top: 13px;}
+    64%  {background: blue; left: -157px; top: 22px;}
+    80%  {background: green; left: -130px; top: 100px;}
+    100% {background: red; left: -160px; top: 150px;}
+}
+@-webkit-keyframes myfive {
+      0%   {background: red; left: -250px; top: 10px;}
+    16%   {left: -180px; top: 40px;}
+	32%{left:-190px;top:145px;}
+	48%  {background: yellow; left: -306px; top: 152px;}
+    64%  {background: blue; left: -346px; top: 79px;}
+    80%  {background: green; left: -260px; top: 5px;}
+    100% {background: red; left: -250px; top: 10px;}
+}
+#facebook
+{	width: 40px;
+    height: 40px;
+	position:relative;
+	left:-320px;
+    -webkit-animation: myfirst 15s infinite; /* Chrome, Safari, Opera */
+    -webkit-animation-direction: inherit; /* Chrome, Safari, Opera */
+    animation: myfirst 1s infinite;
+    animation-direction: alternate;
+    }
+#linkedin{
+	width: 40px;
+    height: 40px;
+	
+    background: red;
+    position: relative;
+	left:-320px;
+    -webkit-animation: mysecond 15s infinite; /* Chrome, Safari, Opera */
+    -webkit-animation-direction: inherit; /* Chrome, Safari, Opera */
+    animation: myfirst 5s infinite;
+    animation-direction: alternate;
+}
+#twitter{
+	width: 40px;
+    height: 40px;
+	
+    background: red;
+    position: relative;
+	left:-250px;
+    -webkit-animation: mythird 15s infinite; /* Chrome, Safari, Opera */
+    -webkit-animation-direction: inherit; /* Chrome, Safari, Opera */
+    animation: myfirst 5s infinite;
+    animation-direction: alternate;
+}
+#instagram{
+	width: 40px;
+    height: 40px;
+	
+    background: red;
+    position: relative;
+	left:-250px;
+    -webkit-animation: myfourth 15s infinite; /* Chrome, Safari, Opera */
+    -webkit-animation-direction: inherit; /* Chrome, Safari, Opera */
+    animation: myfirst 5s infinite;
+    animation-direction: alternate;
+}
+#kat{
+	width: 40px;
+    height: 40px;
+	
+    background: red;
+    position: relative;
+	left:-250px;
+    -webkit-animation: myfive 15s infinite; /* Chrome, Safari, Opera */
+    -webkit-animation-direction: inherit; /* Chrome, Safari, Opera */
+    animation: myfirst 5s infinite;
+    animation-direction: alternate;
+}
+#sun{
+	border-radius:50px;position:relative;left:-10px;top:104px;
+}
+#about{
+	position:relative;left:340px;
+}
+#faq{
+	position:relative;left:380px;
+}
+#how{
+	position:absolute;left:1040px;top:26px;
+}
+
+#security{
+	position:relative;left:420px;
+}
+#others{
+		position:relative;left:460px;
+		
+}
+#last{
+	border:2px solid blue;width:710px;height:270px;position:relative;left:122px;top:100px;
+	  font-family: arial, sans-serif;padding-top:18px;
+}
+#recycle_bin{
+	position:relative;left:130px;top:10px;background-color:#F2F2F2;
+	width:200px;height:210px;padding-top:6px;border-radius:3px;
+}
+#how{
+	background-color:#F2F2F2;border-radius:3px;width:200px;height:210px;padding-top:6px;
+	position:relative;left:430px;top:-210px;
+}
+#message{
+	font-size:16px;color:red;
+}

@@ -1,0 +1,33 @@
+body{
+	text-align:center;
+	background-color:#EBEBEB;
+}
+#surround{
+  width:1345px;
+  margin:0 auto;
+	
+ /*more CSS*/
+}
+h1{
+	color:#00FFFF;
+}
+
+#main{
+	background-color:white;
+	width:600px;height:450px;
+	position:relative;left:350px;
+	font-family: Cambria, Georgia, serif;
+	-webkit-box-shadow: 4px 3px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 4px 3px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 4px 3px 5px 0px rgba(0,0,0,0.75);
+	
+	}
+#text{
+	position:relative;color:red;font-size:20px;
+}
+#answer{
+	position:relative;color:black;
+}
+#last{
+	font-family: Verdana, Geneva, sans-serif;
+}

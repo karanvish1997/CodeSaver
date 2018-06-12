@@ -1,0 +1,45 @@
+body{
+	text-align:center;
+}
+#surround{
+  width:1345px;
+  margin:0 auto;
+  /*more CSS*/
+}
+#about{
+	font-size:98px;position:relative;left:-340px;top:50px;
+}
+#line{
+	width:200px;border:3px solid black;
+	position:relative;left:-130px;top:-169.7px;
+}
+#us{
+	font-size:48px;position:relative;top:-83px;left:-140px;
+}
+#main{
+	border:2px solid A4D3EE;
+	padding:30px;width:850px;
+	position:relative;
+	left:200px;font-family: Cambria,Georgia, serif;
+	font-size:18px;
+	 background: linear-gradient(#B0E2FF, #A4D3EE);
+}
+#contact{
+	position:relative;left:-230px;top:20px;
+}
+#contactus{
+	position:relative;left:200px;
+}
+#facebook{
+	position:relative;left:-247px;top:20px;
+}
+#twitter{
+	position:relative;left:-230px;top:15px;
+}
+#instagram{
+		position:relative;left:-207px;top:15px;
+}
+#linkedin{
+		position:relative;left:-180px;top:15px;
+	
+}

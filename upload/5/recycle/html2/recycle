@@ -1,0 +1,63 @@
+&lt;?php
+	include 'core/init.php';
+?&gt;
+&lt;!docktype html&gt;
+&lt;/html&gt;
+
+&lt;head&gt;
+	&lt;link rel=&quot;stylesheet&quot; href=&quot;css/how.css&quot;/&gt; 
+&lt;/head&gt;
+
+&lt;body&gt;
+&lt;header style=&quot;background-image: url(css/lolo.jpg); height: 100px;margin-left:auto;margin-right:auto; border: 1px solid black; padding-right:auto;&quot;&gt;
+ &lt;h2 id=&quot;heading&quot;&gt; CodeBox&lt;/h2&gt;
+ &lt;div id=&quot;log&quot;&gt;&lt;a href=&quot;logout.php&quot; id=&quot;logout&quot;&gt;Logout&lt;/a&gt;&lt;/div&gt;
+ &lt;div id=&quot;back&quot;&gt;&lt;a href=&quot;main.php&quot;&gt;Back&lt;/a&gt;&lt;/div&gt;
+ &lt;/header&gt;
+
+&lt;a href=&quot;main.php&quot;&gt; Back&lt;/a&gt;
+&lt;?php
+		
+	function listFolderFiles($dir){
+    $ffs = scandir($dir);
+    echo '&lt;ol&gt;';
+    foreach($ffs as $ff){
+        if($ff != '.' &amp;&amp; $ff != '..'){
+            echo '&lt;a href=&quot;&quot;&gt;&lt;li&gt;'.$ff.'&lt;/a&gt;';
+            if(is_dir($dir.'/'.$ff)) listFolderFiles($dir.'/'.$ff);
+            echo '&lt;/li&gt;';
+        }
+    }
+    echo '&lt;/ol&gt;';
+}
+
+listFolderFiles(&quot;upload/$session_user_id/recycle/&quot;);
+		
+		
+		
+		
+
+?&gt;
+
+&lt;form action=&quot;&quot; method=&quot;post&quot;&gt;
+	
+		&lt;?php
+		if(empty($_POST['file_name'])===false){
+			$filename=$_POST['file_name'];
+			if(file_exists(&quot;upload/$session_user_id/recycle/$filename&quot;)){
+			$myfile=fopen(&quot;upload/$session_user_id/recycle/$filename&quot;,&quot;r&quot;);
+			
+			while(!feof($myfile)) {
+			echo fgets($myfile) . '&lt;br&gt;';
+		}
+		fclose($myfile);
+		}
+		}
+		
+		?&gt;
+	Open a file:&lt;br /&gt;
+	&lt;input type=&quot;text&quot; name=&quot;file_name&quot;/&gt;
+&lt;/form&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;

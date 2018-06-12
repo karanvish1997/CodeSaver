@@ -1,0 +1,35 @@
+body{
+	text-align:center;
+	background-color:#EBEBEB;
+}
+#surround{
+  width:1345px;
+  margin:0 auto;
+  /*more CSS*/
+}
+#googleMap{
+	position:relative;left:500px;top:-499px;
+}
+#main_div{
+	background-color:white;color:black;
+	padding:20px;width:1000px;height:600px;
+	position:relative;left:190px;top:100px;
+}
+#heading{
+	color:black;position:relative;left:-270px;
+	font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
+}
+#first{
+	position:relative;left:0px;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+#inside{
+	color:white;font-size:20px;
+	background-color:#00BFFF;width:460px;padding:10px;text-align:left;padding:15px;
+}
+.cpmmon_input{
+	padding:5px;position:relative;left:20px;
+}
+#button{
+	position:relative;left:135px;padding:8px;width:160px;
+}
